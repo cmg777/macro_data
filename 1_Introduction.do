@@ -1,9 +1,10 @@
+
 ///////////////////////////////////
 // STEP 1: Plot some US GDP data //
 ///////////////////////////////////
 
 // load in the data
-import excel using "data/GDPCA.xls" , firstrow
+import excel using "data/GDPCA.xls" , firstrow clear
 
 // extract just the year (so ignore the exact date)
 replace Year = year(Year)

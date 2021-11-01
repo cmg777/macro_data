@@ -3,7 +3,7 @@
 /////////////////////////////////////////////
 
 // load in the data
-import excel using "data/mpd2018.xlsx" , sheet(Full data) firstrow
+import excel using "data/mpd2018.xlsx" , sheet(Full data) firstrow clear
 
 // drop if we have no country code
 drop if missing(countrycode)
@@ -38,7 +38,7 @@ scatter gpop lcgdppc if gpop > -3 & gpop < 6
 //////////////////////////////////////////////
 
 // load in PWT data
-import excel using "data/pwt100.xlsx", sheet(Data) firstrow
+import excel using "data/pwt100.xlsx", sheet(Data) firstrow clear
 
 // keep only variables of interest (opposite of drop)
 keep countrycode year rgdpna avh

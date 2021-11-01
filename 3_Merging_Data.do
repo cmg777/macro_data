@@ -3,7 +3,7 @@
 //////////////////////////////////////////////
 
 // load in World Bank inequality data
-import excel using "data/world_bank_gini.xls" , firstrow
+import excel using "data/world_bank_gini.xls" , firstrow clear
 
 // save it as a Stata DTA file for later use (you need to create the stata directory)
 save stata/world_bank_gini
@@ -16,7 +16,7 @@ clear
 /////////////////////////////////////////////
 
 // load in PWT data
-import excel using "data/pwt100.xlsx", sheet(Data) firstrow
+import excel using "data/pwt100.xlsx", sheet(Data) firstrow clear
 
 // keep only a few variables
 keep countrycode year rgdpna pop
